@@ -130,6 +130,58 @@ form #reset{
     flex-direction: row;
     justify-content: space-between;
 }
+#floatingBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background: #875a7b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    font-size: 15px;
+}
+
+#card{
+    position: fixed;
+    bottom: -250px;
+    right: 20px;
+    width: 300px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.192);
+    border: 2px solid #875a7b25;
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    opacity: 1;
+    transition: all 300ms ease-in-out;
+}
+.show{
+    bottom: 70px !important;
+    opacity: 1 !important;
+}
+#card ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#card ul li{
+    padding: 10px 20px;
+    background: red;
+    margin: 10px 0px;
+    border-radius: 5px;
+    background: #875a7b;
+    color: white;
+    font-size: 13px;
+}
+
+#card ul li:last-child{
+    border-bottom: none;
+}
+
 
 /* HOME PAGE STYLING */
 

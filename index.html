@@ -37,6 +37,18 @@
           </div>
         </div>
       </form>
+      <!-- Floating Button -->
+      <button id="floatingBtn">Sumitted By</button>
+      <!-- Card that appears on clicking the floating button -->
+      <div id="card">
+        <ul>
+          <li>SU92-BSCSM-F23-061</li>
+          <li>SU92-BSCSM-F23-051</li>
+          <li>SU92-BSCSM-F23-073</li>
+          <li>SU92-BSCSM-F23-115</li>
+          <li>SU92-BSCSM-F23-116</li>
+        </ul>
+      </div>
     </main>
   </body>
   <script>
@@ -51,6 +63,19 @@
       } else {
         alert("Login Successful");
         window.location.href = "home.html";
+      }
+    });
+
+    // Script to handle the floating button click
+    document.getElementById("floatingBtn").addEventListener("click", function() {
+      const card = document.getElementById("card");
+      const btn = document.getElementById("floatingBtn");
+
+      card.classList.toggle("show");
+      if(card.classList.contains("show")) {
+        btn.textContent = "Close";
+      } else {
+        btn.textContent = "Submitted By";
       }
     });
   </script>
