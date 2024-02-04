@@ -48,6 +48,7 @@ form{
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 form div{
@@ -138,6 +139,9 @@ form #reset{
     }
     form{
         padding: 0px 10px;
+    }
+    form .sub-heading{
+        width: 90%;
     }
     form div input{
         width: 90%;
