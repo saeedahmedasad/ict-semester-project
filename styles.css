@@ -176,6 +176,7 @@ form #reset{
     background: #875a7b;
     color: white;
     font-size: 13px;
+    font-weight: bold;
 }
 
 #card ul li:last-child{
