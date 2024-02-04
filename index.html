@@ -30,8 +30,7 @@
             <input type="text" placeholder="User ID" />
             <input type="password" placeholder="Password" />
           </div>
-
-          <button type="submit">Log in</button>
+          <button type="button"><a href="home.html">Log in</a></button>
 
           <div id="reset">
             <span><a href="#" class="reset">Reset Password</a></span>
@@ -40,4 +39,19 @@
       </form>
     </main>
   </body>
+  <script>
+    const form = document.querySelector("form");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const inputs = document.querySelectorAll("input");
+      const user = inputs[0].value;
+      const pass = inputs[1].value;
+      if (user === "" || pass === "") {
+        alert("Please fill in all the fields");
+      } else {
+        alert("Login Successful");
+        window.location.href = "home.html";
+      }
+    });
+  </script>
 </html>

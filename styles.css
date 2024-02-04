@@ -10,6 +10,11 @@ html{
 body{
     background: #e8dcdc;
 }
+a{
+    text-decoration: none;
+    color: white;
+
+}
 nav{
     background: #875a7b;
     padding: 0.5rem 1rem;
@@ -109,7 +114,8 @@ form button{
     font-size: 13px;
     transition: all 200ms ease-in-out;
 }
-form button:hover{
+form button:hover a{
+    transition: .3s;
     color: black;
 }
 form .reset{
@@ -124,6 +130,78 @@ form #reset{
     flex-direction: row;
     justify-content: space-between;
 }
+
+/* HOME PAGE STYLING */
+
+.container .home-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    gap: 30px;
+}
+.container .home-logo h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 500;
+    color: #81007f;
+    font-weight: 500;
+}
+.container .title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    background: #81007f;
+    border-radius: 50px;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px;
+    background: #81007f;
+    margin-top: 4px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.nav a{
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: white;
+    border-radius: 50px;
+    color: #81007f;
+    transition: all 200ms ease-in-out;
+}
+.nav a:hover{
+    background: #875a7b;
+    color: white;
+}
+.images{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 20px; */
+    padding: 20px 0px;
+}
+.images img{
+    width: 98%;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) ;
+
+}
+/* HOME PAGE STYLING */
 
 
 @media screen and (max-width: 768px) {
@@ -154,5 +232,18 @@ form #reset{
     }
     form #reset{
         width: 90%;
+    }
+    .container .title{
+        width: 100%;
+    }
+    .nav{
+        border-radius: 10px;
+        padding: 20px;
+        justify-content: flex-start;
+    }
+    .images img{
+        width: 110%;
+        border-radius: 0px;
+        height: 100%;
     }
 }
