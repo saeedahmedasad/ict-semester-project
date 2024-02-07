@@ -1,302 +1,298 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
-body{
-    background: #e8dcdc;
+body {
+  background: #e8dcdc;
 }
-a{
-    text-decoration: none;
-    color: white;
-
+a {
+  text-decoration: none;
+  color: white;
 }
-nav{
-    background: #875a7b;
-    padding: 0.5rem 1rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+nav {
+  background: #875a7b;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
-.logo{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.5rem;
-    color: white;
-    font-weight: normal;
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  font-weight: normal;
 }
-.logo h1{
-    font-weight: 500;
-    font-size: 30px;
-    padding: 15px 20px;
-    margin-left: 120px;
+.logo h1 {
+  font-weight: 500;
+  font-size: 30px;
+  padding: 15px 20px;
+  margin-left: 120px;
 }
-.logo img{
-    position: absolute;
-    left: 50px;
-    transform: translate(0, 3.2rem);
-}
-
-form{
-    background: white;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) ;
-    margin: auto;
-    max-width: 600px;
-    width: 100%;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.logo img {
+  position: absolute;
+  left: 50px;
+  transform: translate(0, 3.2rem);
 }
 
-form div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 360px;
-    padding: 10px 0px;
-}
-form div input{
-    width: 100%;
-    padding: 1rem;
-    margin: 0.5rem 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    width: 80%;
-    margin-bottom: 1rem;
-    transition: all 300ms ease-in-out;
-}
-form div input:focus{
-    border-color: #875a7b;
-}
-form .heading{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 1.2;
-    text-align: center;
-}
-form .sub-heading{
-    color: rgba(33, 37, 41, 0.4);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1.2;
-    font-weight: bold;
-    text-align: center;
-}
-form .note{
-    width: 80%;
-    text-align: left;
-    font-weight: bold;
-    color: #F44336;
-    font-size: 13px;
-}
-form button{
-    width: 80%;
-    padding: 1.7rem 1rem;
-    margin: 0.5rem 0;
-    border: none;
-    border-radius: 5px;
-    background: #875a7b;
-    color: white;
-    font-size: 1.6rem;
-    cursor: pointer;
-    font-size: 13px;
-    transition: all 200ms ease-in-out;
-}
-form button:hover a{
-    transition: .3s;
-    color: black;
-}
-form .reset{
-    margin-bottom: rem;
-    color: black;
-    text-decoration: none;
-    font-size: 13px;
-}
-form #reset{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-#floatingBtn{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border-radius: 50px;
-    padding: 10px 20px;
-    background: #875a7b;
-    color: white;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    font-size: 15px;
+form {
+  background: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  margin: auto;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-#card{
-    position: fixed;
-    bottom: -250px;
-    right: 20px;
-    width: 300px;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.192);
-    border: 2px solid #875a7b25;
-    backdrop-filter: blur(10px); 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    border-radius: 10px;
-    opacity: 1;
-    transition: all 300ms ease-in-out;
+form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 360px;
+  padding: 10px 0px;
 }
-.show{
-    bottom: 70px !important;
-    opacity: 1 !important;
+form div input {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  width: 80%;
+  margin-bottom: 1rem;
+  transition: all 300ms ease-in-out;
 }
-#card ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+form div input:focus {
+  border-color: #875a7b;
+}
+form .heading {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center;
+}
+form .sub-heading {
+  color: rgba(33, 37, 41, 0.4);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  font-weight: bold;
+  text-align: center;
+}
+form .note {
+  width: 80%;
+  text-align: left;
+  font-weight: bold;
+  color: #f44336;
+  font-size: 13px;
+}
+form button {
+  width: 80%;
+  padding: 1.7rem 1rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+  background: #875a7b;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 200ms ease-in-out;
+}
+form button:hover a {
+  transition: 0.3s;
+  color: black;
+}
+form .reset {
+  margin-bottom: rem;
+  color: black;
+  text-decoration: none;
+  font-size: 13px;
+}
+form #reset {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#floatingBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  background: #875a7b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 15px;
 }
 
-#card ul li{
-    padding: 10px 20px;
-    background: red;
-    margin: 10px 0px;
-    border-radius: 5px;
-    background: #875a7b;
-    color: white;
-    font-size: 13px;
-    font-weight: bold;
+#card {
+  position: fixed;
+  bottom: -250px;
+  right: 20px;
+  width: 300px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.192);
+  border: 2px solid #875a7b25;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  opacity: 1;
+  transition: all 300ms ease-in-out;
+}
+.show {
+  bottom: 70px !important;
+  opacity: 1 !important;
+}
+#card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-#card ul li:last-child{
-    border-bottom: none;
+#card ul li {
+  padding: 10px 20px;
+  background: red;
+  margin: 10px 0px;
+  border-radius: 5px;
+  background: #875a7b;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
 }
 
+#card ul li:last-child {
+  border-bottom: none;
+}
 
 /* HOME PAGE STYLING */
 
-.container .home-logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0px;
-    gap: 30px;
+.container .home-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  gap: 30px;
 }
-.container .home-logo h1{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-    font-weight: 500;
-    color: #81007f;
-    font-weight: 500;
+.container .home-logo h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  font-weight: 500;
+  color: #81007f;
+  font-weight: 500;
 }
-.container .title{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    width: 95%;
-    margin: auto;
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-    background: #81007f;
-    border-radius: 50px;
+.container .title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  background: #81007f;
+  border-radius: 50px;
 }
-.nav a{
-    text-decoration: none;
-    color: white;
+.nav a {
+  text-decoration: none;
+  color: white;
 }
-.nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px 0px;
-    background: #81007f;
-    margin-top: 4px;
-    flex-wrap: wrap;
-    gap: 10px;
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  background: #81007f;
+  margin-top: 4px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
-.nav a{
-    font-size: 13px;
-    font-weight: 500;
-    padding: 10px 20px;
-    border-radius: 10px;
-    background: white;
-    border-radius: 50px;
-    color: #81007f;
-    transition: all 200ms ease-in-out;
-}
-.nav a:hover{
-    background: #875a7b;
-    color: white;
-}
-.images{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* gap: 20px; */
-    padding: 20px 0px;
-}
-.images img{
-    width: 98%;
-    border-radius: 10px;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) ;
+.nav a {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 2px 20px;
 
+  border-radius: 10px;
+  background: white;
+  border-radius: 50px;
+  color: #81007f;
+  transition: all 200ms ease-in-out;
+}
+.nav a:hover {
+  opacity: 0.9;
+}
+.images {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 20px; */
+  padding: 20px 0px;
+}
+.images img {
+  width: 98%;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 /* HOME PAGE STYLING */
-
 
 @media screen and (max-width: 768px) {
-    .logo img{
-        display: none;
-    }
-    .logo h1{
-        font-size: 20px;
-        margin-left: 0px;
-    }
-    main{
-        padding: 0px 20px;
-    }
-    form{
-        padding: 0px 10px;
-    }
-    form .sub-heading{
-        width: 90%;
-    }
-    form div input{
-        width: 90%;
-    }
-    form .note{
-        width: 90%;
-    }
-    form button{
-        width: 90%;
-    }
-    form #reset{
-        width: 90%;
-    }
-    .container .title{
-        width: 100%;
-    }
-    .nav{
-        border-radius: 10px;
-        padding: 20px;
-        justify-content: flex-start;
-    }
-    .images img{
-        width: 110%;
-        border-radius: 0px;
-        height: 100%;
-    }
+  .logo img {
+    display: none;
+  }
+  .logo h1 {
+    font-size: 20px;
+    margin-left: 0px;
+  }
+  main {
+    padding: 0px 20px;
+  }
+  form {
+    padding: 0px 10px;
+  }
+  form .sub-heading {
+    width: 90%;
+  }
+  form div input {
+    width: 90%;
+  }
+  form .note {
+    width: 90%;
+  }
+  form button {
+    width: 90%;
+  }
+  form #reset {
+    width: 90%;
+  }
+  .container .title {
+    width: 100%;
+  }
+  .nav {
+    border-radius: 10px;
+    padding: 20px;
+    justify-content: flex-start;
+  }
+  .images img {
+    width: 110%;
+    border-radius: 0px;
+    height: 100%;
+  }
 }
